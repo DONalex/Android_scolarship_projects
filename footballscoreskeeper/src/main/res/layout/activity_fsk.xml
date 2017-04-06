@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_scores"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#996"
+            android:orientation="vertical"
+            tools:context="rip_dev_studio.scores.Scores">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="18dp"
+                android:paddingTop="1dp"
+                android:text="Team"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Score1A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="14dp"
+                android:text="Score"
+                android:textColor="#616161"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Score2A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:paddingBottom="24dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/Goal1A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:onClick="addGoalPointsTeamA"
+                android:text="Goal" />
+
+            <TextView
+                android:id="@+id/Penalty1A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="0dp"
+                android:text="Penalty"
+                android:textColor="#616161"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Penalty2A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:paddingBottom="0dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/Penalty3A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:onClick="addPenaltyPointsTeamA"
+                android:text="Penalty Shot" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#996"
+            android:orientation="vertical"
+            tools:context="rip_dev_studio.scores.Scores">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="34dp"
+                android:paddingTop="1dp"
+                android:text="A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Red1A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="14dp"
+                android:text="Red"
+                android:textColor="#616161"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Red2A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:paddingBottom="24dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/Red3A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:onClick="addRedCardTeamA"
+                android:text="Red Card" />
+
+            <TextView
+                android:id="@+id/Yellow1A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="0dp"
+                android:text="Yellow"
+                android:textColor="#616161"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Yellow2A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:paddingBottom="0dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/Yellow3A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:onClick="addYellowCardTeamA"
+                android:text="Yellow Card" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_weight="0"
+            android:background="@color/colorPrimaryDark">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#9875"
+            android:orientation="vertical"
+            tools:context="rip_dev_studio.scores.Scores">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="18dp"
+                android:paddingTop="1dp"
+                android:text="Team"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Score1B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="14dp"
+                android:text="Score"
+                android:textColor="#616161"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Score2B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:paddingBottom="24dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/Goal1B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:onClick="addGoalPointsTeamB"
+                android:text="Goal" />
+
+            <TextView
+                android:id="@+id/Penalty1B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="0dp"
+                android:text="Penalty"
+                android:textColor="#616161"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Penalty2B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:paddingBottom="0dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/Penalty3B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:onClick="addPenaltyPointsTeamB"
+                android:text="Penalty Shot" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#9875"
+            android:orientation="vertical"
+            tools:context="rip_dev_studio.scores.Scores">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="34dp"
+                android:paddingTop="1dp"
+                android:text="B"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Red1B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="14dp"
+                android:text="Red"
+                android:textColor="#616161"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Red2B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:paddingBottom="24dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/Red3B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:onClick="addRedCardTeamB"
+                android:text="Red Card" />
+
+            <TextView
+                android:id="@+id/Yellow1B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="0dp"
+                android:text="Yellow"
+                android:textColor="#616161"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Yellow2B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:paddingBottom="0dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/Yellow3B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:onClick="addYellowCardTeamB"
+                android:text="Yellow Card" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ResetScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:onClick="ResetScore"
+        android:text="Reset" />
+
+</RelativeLayout>

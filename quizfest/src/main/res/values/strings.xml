@@ -1,0 +1,12 @@
+<resources>
+    <string name="Version">bY DONalex</string>
+    <string name="app_name">World Of Warcraft Quiz</string>
+    <string name="excellent" translatable="false">Excellent !</string>
+    <string name="good">Good</string>
+    <string name="average">Sufficient</string>
+    <string name="bad">Fail</string>
+    <string name="excellent_text">You are a true hero of Azeroth. Answered correctly to all questions</string>
+    <string name="good_text">You did very well and proved that you know few things about WoW</string>
+    <string name="average_text">I can see that you know a little about WoW history, Congratz.</string>
+    <string name="bad_text">Unfortunately you should give a try on Wikipedia for some answers.</string>
+</resources>

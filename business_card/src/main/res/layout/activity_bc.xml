@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="rip_dev_studio.business_card.BC">
+
+    <ImageView
+        android:id="@+id/cb"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cb" />
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/crs"
+        android:layout_centerHorizontal="true"
+        android:text="Computer Repairs"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/crs"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/crs" />
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/info"
+        android:layout_marginRight="2dp"
+        android:layout_toEndOf="@+id/info"
+        android:layout_toRightOf="@+id/info"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif"
+        android:gravity="start"
+        android:text="A Company specialized in troubleshooting, servicing and repairing a wide variety of hardware and software-related personal computer issues and computer network problems"
+        android:textAlignment="textStart"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#FFD1D1D4"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/info"
+        android:layout_width="80dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/Text1"
+        android:layout_marginTop="36dp"
+        android:layout_toLeftOf="@+id/Text1"
+        android:layout_toStartOf="@+id/Text1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/hour"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_alignLeft="@+id/info"
+        android:layout_alignStart="@+id/info"
+        android:layout_below="@+id/info"
+        android:layout_marginTop="9dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hour" />
+
+    <TextView
+        android:id="@+id/Text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hour"
+        android:layout_toEndOf="@+id/hour"
+        android:layout_toRightOf="@+id/hour"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif"
+        android:text="Monday-Friday 9:00-18:00
+ Saturday 10:00-14:00
+ Sunday closed"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#FFD1D1D4"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/contact"
+        android:layout_width="80dp"
+        android:layout_height="66dp"
+        android:layout_alignLeft="@+id/hour"
+        android:layout_alignStart="@+id/hour"
+        android:layout_below="@+id/hour"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/contact" />
+
+    <TextView
+        android:id="@+id/Text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contact"
+        android:layout_toEndOf="@+id/contact"
+        android:layout_toRightOf="@+id/contact"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif"
+        android:text="   S.C CompsRepairs
+     Adress:Bermingham UK, Str CrossRoad
+     Phone: XXXX XXX XXX
+     Email:DONalex@live.com"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#FFD1D1D4"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

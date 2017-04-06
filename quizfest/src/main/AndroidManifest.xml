@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rip_dev_studio.quizfest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".quizfest">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Q1">
+            <intent-filter>
+                <action android:name="android.intent.action.Q1" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Q2">
+            <intent-filter>
+                <action android:name="android.intent.action.Q2" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Q3">
+            <intent-filter>
+                <action android:name="android.intent.action.Q3" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Q4">
+            <intent-filter>
+                <action android:name="android.intent.action.Q4" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Q5">
+            <intent-filter>
+                <action android:name="android.intent.action.Q5" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Q6">
+            <intent-filter>
+                <action android:name="android.intent.action.Q6" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Q7">
+            <intent-filter>
+                <action android:name="android.intent.action.Q7" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Q8">
+            <intent-filter>
+                <action android:name="android.intent.action.Q8" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Results">
+            <intent-filter>
+                <action android:name="android.intent.action.RESULTS" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
